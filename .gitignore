@@ -35,3 +35,5 @@ yarn-error.log*
 next-env.d.ts
 yarn.lock
 package.lock.json
+/.idea/git_toolbox_prj.xml
+/.idea/prettier.xml
