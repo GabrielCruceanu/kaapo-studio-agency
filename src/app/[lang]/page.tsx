@@ -15,7 +15,7 @@ export const metadata = {
 };
 
 export default async function IndexPage({ params: { lang } }: { params: { lang: Locale } }) {
-    const { page, navigation, footer } = await getDictionary(lang);
+    const { navigation, footer } = await getDictionary(lang);
     return (
         <>
             <Cursor />
@@ -37,7 +37,7 @@ export default async function IndexPage({ params: { lang } }: { params: { lang: 
                         </div>
                         {/*<Contact />*/}
                     </main>
-                    <Footer subBg={true} footer={footer} lang={lang} />
+                    <Footer subBg={true} footer={footer} />
                 </div>
             </div>
         </>
