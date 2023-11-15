@@ -1,16 +1,66 @@
 {
   "navigation": {
-    "home": "Startseite",
-    "about": "Über"
+    "mainMenu": {
+      "back": "Inapoi",
+      "home": "Acasa",
+      "services": {
+        "name": "Servicii",
+        "types": [
+          {
+            "name": "Web Design",
+            "url": "web-design"
+          },
+          {
+            "name": "Web Development",
+            "url": "web-development"
+          },
+          {
+            "name": "Optimizare",
+            "url": "optimization"
+          },
+          {
+            "name": "Mentenanta",
+            "url": "maintenance"
+          }
+        ]
+      },
+      "about": "Despre noi",
+      "portfolio": "Portofoliu",
+      "contact": "Contact"
+    },
+    "contactInfo": {
+      "base": {
+        "name": "Sediu",
+        "street": "Hrisovului, Nr. 2-4, Parter, Camera 1",
+        "district": "Bucuresti",
+        "country": "Romania"
+      },
+      "connect": {
+        "name": "Contact",
+        "phoneNumber": "+4 0746 385 038",
+        "email": "contact@kaapo.studio"
+      },
+      "follow": {
+        "name": "Social Media"
+      },
+      "language": {
+        "name": "Nationalitate"
+      }
+    }
+  },
+  "footer": {
+    "eml": {
+      "title": "Ne-ar face placere să ne contactati."
+    }
   },
   "page": {
     "home": {
-      "title": "Willkommen bei NextJs i18n",
-      "description": "Internationalisierung im NextJs 13 App-Router"
+      "title": "Bun venit la NextJs i18n",
+      "description": "internatipnalizarea in NextJs 13 App router"
     },
     "about": {
-      "title": "Über uns",
-      "description": "Dies ist die About-Seite"
+      "title": "Despre noi",
+      "description": "Aceasta este pagina despre noi"
     }
   }
 }
