@@ -1,49 +1,45 @@
-import Script from 'next/script';
+import React from 'react';
 //= Scripts
-import generateStylesheetObject from '@/src/common/generateStylesheetsObject';
-//= Common Components
-import LoadingScreen from '@/src/components/Common/Loader';
-import Cursor from '@/src/components/Common/Cursor';
-import ProgressScroll from '@/src/components/Common/ProgressScroll';
-//= Page Components
-import Navigation from '@/src/components/Preview/Navigation';
-import Header from '@/src/components/Preview/Header';
-import Portfolio from '@/src/components/Preview/Portfolio';
-import Footer from '@/src/components/Preview/Footer';
-import HeaderLocale from '@/src/components/Common/Header-Locale';
 import { Locale } from '@/i18n.config';
 import { getDictionary } from '@/src/lib/dictionary';
+//= Common Components
+import Cursor from '@/src/components/Common/Cursor';
+import ProgressScroll from '@/src/components/Common/ProgressScroll';
+import Navbar from '@/src/components/Common/Navbar';
+import Menu from '@/src/components/Common/Menu';
+import Footer from '@/src/components/Common/Footer';
+//= Page Components
 
 export const metadata = {
     title: 'Kaapo Studio',
 };
 
 export default async function IndexPage({ params: { lang } }: { params: { lang: Locale } }) {
-    const { page } = await getDictionary(lang);
-    console.log('page', page);
+    const { navigation, footer } = await getDictionary(lang);
     return (
-        <section className="py-24">
-            <HeaderLocale lang={lang} />
-            <div className="container">
-                <h1 className="text-3xl font-bold">{page.home.title}</h1>
-                <p className="text-gray-500">{page.home.description}</p>
+        <>
+            <Cursor />
+            <ProgressScroll />
+
+            <div id="smooth-wrapper">
+                <Navbar borderBottom={false} lang={lang} />
+                <Menu lang={lang} navigation={navigation} />
+                <div id="smooth-content">
+                    <main className="main-bg">
+                        <div className="main-box main-bg onto min-vh-100">
+                            {/*<Header />*/}
+                            {/*<About />*/}
+                            {/*<Services />*/}
+                            {/*<Works />*/}
+                            {/*<Awards />*/}
+                            {/*<Testimonials />*/}
+                            {/*<Team />*/}
+                        </div>
+                        {/*<Contact />*/}
+                    </main>
+                    <Footer subBg={true} footer={footer} />
+                </div>
             </div>
-        </section>
-        // <body className="main-bg">
-        //   <LoadingScreen />
-        //   <Cursor />
-        //   <ProgressScroll />
-        //
-        //   <div id="smooth-wrapper">
-        //     <div id="smooth-content">
-        //       <Navigation />
-        //       <main>
-        //         <Header />
-        //         <Portfolio />
-        //       </main>
-        //       <Footer />
-        //     </div>
-        //   </div>
-        // </body>
+        </>
     );
 }

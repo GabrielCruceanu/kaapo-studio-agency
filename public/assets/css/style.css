@@ -1,14 +1,5 @@
 @charset "UTF-8";
-/*-----------------------------------------------------------------------------------
 
-    Theme Name: Bayone
-    Theme URI: http://
-    Description: Creative Agency & Portfolio
-    Author: UI-ThemeZ
-    Author URI: http://themeforest.net/user/UI-ThemeZ
-    Version: 1.0
-
------------------------------------------------------------------------------------*/
 /* Variables  #202327
 -----------------------------------------------------------------*/
 /* Typography
@@ -26,8 +17,7 @@ body {
   color: #fff;
   background-color: #0c0c0c;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Mona-Sans Regular', sans-serif;
+  font-family: 'Nunito-Sans Regular', sans-serif;
   overflow-x: hidden !important;
 }
 
@@ -200,7 +190,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.2;
   margin: 0;
   font-weight: 500;
-  font-family: 'Mona-Sans Medium', sans-serif;
+  font-family: 'Nunito-Sans Medium', sans-serif;
 }
 
 h1 {
@@ -243,39 +233,39 @@ p {
 }
 
 .f-thin {
-  font-family: 'Mona Sans Thin';
+  font-family: 'Nunito-Sans Thin', sans-serif;
 }
 
 .f-light {
-  font-family: 'Mona-Sans Light';
+  font-family: 'Nunito-Sans Light', sans-serif;
 }
 
 .f-ultra-light {
-  font-family: 'Mona-Sans UltraLight';
+  font-family: 'Nunito-Sans UltraLight', sans-serif;
 }
 
 .f-regular {
-  font-family: 'Mona-Sans Regular';
+  font-family: 'Nunito-Sans Regular', sans-serif;
 }
 
 .f-medium {
-  font-family: 'Mona-Sans Medium';
+  font-family: 'Nunito-Sans Medium', sans-serif;
 }
 
 .f-sbold {
-  font-family: 'Mona-Sans SemiBold';
+  font-family: 'Nunito-Sans SemiBold', sans-serif;
 }
 
 .f-bold {
-  font-family: 'Mona-Sans Bold';
+  font-family: 'Nunito-Sans Bold', sans-serif;
 }
 
 .f-xbold {
-  font-family: 'Mona-Sans ExtraBold';
+  font-family: 'Nunito-Sans ExtraBold', sans-serif;
 }
 
 .f-black {
-  font-family: 'Mona-Sans Black';
+  font-family: 'Nunito-Sans Black', sans-serif;
 }
 
 a, a:hover {
@@ -4160,7 +4150,7 @@ body.loaded {
   top: 80px;
   left: -100px;
   font-size: 180px;
-  font-family: Poppins;
+  font-family: Nunito-Sans, sans-serif;
   line-height: 0;
 }
 
