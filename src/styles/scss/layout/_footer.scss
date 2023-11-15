@@ -1,0 +1,60 @@
+/* Footer
+-----------------------------------------------------------------*/
+
+footer {
+  position: relative;
+
+
+  .eml {
+
+    .sub-title {
+      margin-bottom: 15px;
+    }
+  }
+
+  .column {
+
+    li {
+      display: inline-block;
+      margin-right: 30px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .bord {
+
+    .links {
+
+      li {
+        display: inline-block;
+        margin-right: 30px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        img {
+          max-height: 50px;
+          min-height: 50px;
+        }
+      }
+    }
+  }
+
+  .logo {
+
+    img {
+      max-width: 170px;
+    }
+  }
+
+  .copyright {
+    p {
+
+      color: $black;
+    }
+  }
+}

@@ -1,7 +1,67 @@
 {
   "navigation": {
-    "home": "Home",
-    "about": "About"
+    "mainMenu": {
+      "back": "Go Back",
+      "home": "Home",
+      "services": {
+        "name": "Services",
+        "types": [
+          {
+            "name": "Web Design",
+            "url": "web-design"
+          },
+          {
+            "name": "Web Development",
+            "url": "web-development"
+          },
+          {
+            "name": "Optimization",
+            "url": "optimization"
+          },
+          {
+            "name": "Maintenance",
+            "url": "maintenance"
+          }
+        ]
+      },
+      "about": "About us",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "contactInfo": {
+      "base": {
+        "name": "Base",
+        "street": "Hrisovului, Nr. 2-4, Parter, Camera 1",
+        "district": "Bucharest",
+        "country": "Romania"
+      },
+      "connect": {
+        "name": "How to Connect",
+        "phoneNumber": "+4 0746 385 038",
+        "email": "contact@kaapo.studio"
+      },
+      "follow": {
+        "name": "Follow us"
+      },
+      "language": {
+        "name": "Language"
+      }
+    }
+  },
+  "footer": {
+    "eml": {
+      "title": "We would love to hear from you."
+    },
+    "links": [
+      {
+        "name": "Maintenance",
+        "url": "maintenance"
+      } ,
+      {
+        "name": "Maintenance",
+        "url": "contact"
+      }
+    ]
   },
   "page": {
     "home": {
