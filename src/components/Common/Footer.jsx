@@ -48,18 +48,18 @@ function Footer({ subBg, footer }) {
                             <div className="column">
                                 <h6 className="sub-title mb-30">Social Media</h6>
                                 <ul className="rest">
-                                    <li className="hover-this cursor-pointer">
-                                        <a href="https://www.linkedin.com/company/kaapo-studio/" className="hover-anim">
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/kaapo-studio/" target="_blank">
                                             LinkedIn
                                         </a>
                                     </li>
-                                    <li className="hover-this cursor-pointer">
-                                        <a href="https://www.facebook.com/kaapo.studio/" className="hover-anim">
+                                    <li>
+                                        <a href="https://www.facebook.com/kaapo.studio/" target="_blank">
                                             Facebook
                                         </a>
                                     </li>
-                                    <li className="hover-this cursor-pointer">
-                                        <a href="https://www.instagram.com/kaapo.studio/" className="hover-anim">
+                                    <li>
+                                        <a href="https://www.instagram.com/kaapo.studio/" target="_blank">
                                             Instagram
                                         </a>
                                     </li>
@@ -71,7 +71,7 @@ function Footer({ subBg, footer }) {
                                 <h6 className="sub-title mb-30">Contact</h6>
                                 {/*<p>Besòs 1, 08174 Sant Cugat del Vallès, Barcelona</p>*/}
                                 <ul className="rest">
-                                    <li className="underline">
+                                    <li>
                                         <a href="tel:+40746385038">+4 0746 385 038</a>
                                     </li>
                                 </ul>

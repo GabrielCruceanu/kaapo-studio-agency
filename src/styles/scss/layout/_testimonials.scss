@@ -1,59 +1,66 @@
-
 /* Testimonials
 -----------------------------------------------------------------*/
 
-.testimonials{
+.testimonials {
 
-    .swiper-button-prev,
-    .swiper-button-next{
-        display: inline-block;
-        position: static;
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        text-align: center;
-        border: 1px solid rgba(255,255,255,.2);
-        border-radius: 50%;
-        color: #fff;
-        font-size: 35px;
-        margin-left: 10px;
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: inline-block;
+    position: static;
+    width: 45px;
+    height: 45px;
+    line-height: 55px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    color: $black;
+    font-size: 35px;
+    margin-left: 10px;
+    transition: all .4s;
 
-        &:after{
-            display: none;
-        }
-
-        &:hover{
-            background: $main_color;
-            border-color: $main_color;
-            color: #0c0c0c;
-        }
+    &:after {
+      display: none;
     }
 
-    .swiper-pagination{
-        width: 140px;
-        height: 140px;
-        border: 1px solid rgba(255,255,255,.5);
-        border-radius: 50%;
-        position: static;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-
-        span{
-            font-size: 30px;
-        }
-
-        .swiper-pagination-total{
-            position: relative;
-            font-size: 17px;
-            margin-bottom: -10px;
-
-            &:before{
-                content: '/';
-                position: relative;
-                margin: 0 2px 0 7px;
-            }
-        }
+    &:hover {
+      background: $main_color;
+      border-color: $main_color;
+      transition: all .4s;
+      color: #0c0c0c;
     }
+  }
+
+  .quote-icon {
+    font-size: 228px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .swiper-pagination {
+    width: 140px;
+    height: 140px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    position: static;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    span {
+      font-size: 30px;
+    }
+
+    .swiper-pagination-total {
+      position: relative;
+      font-size: 17px;
+      margin-bottom: -10px;
+
+      &:before {
+        content: '/';
+        position: relative;
+        margin: 0 2px 0 7px;
+      }
+    }
+  }
 }

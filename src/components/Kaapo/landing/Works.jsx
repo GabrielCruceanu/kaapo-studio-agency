@@ -1,9 +1,10 @@
 'use client';
 import React, { useEffect } from 'react';
 //= Static Data
-import data from '../../data/Landing/works.json';
+import { gsap } from '@/public/assets/js/gsap.min';
+import { ScrollTrigger } from '@/public/assets/js/ScrollTrigger.min';
 
-function Works() {
+function Works({ portfolio }) {
     useEffect(() => {
         if (window.innerWidth > 991) {
             let sections = gsap.utils.toArray('.panel');
@@ -36,7 +37,7 @@ function Works() {
 
     return (
         <section className="works thecontainer ontop">
-            {data.map((item) => (
+            {portfolio.list.map((item) => (
                 <div className="panel" key={item.id}>
                     <div className="item">
                         <div className="img">

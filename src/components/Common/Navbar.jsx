@@ -30,7 +30,7 @@ function Navbar({ borderBottom, lang }) {
     }
 
     return (
-        <div id="navi" className={`topnav blur ${borderBottom ? 'bord-thin-bottom' : ''}`}>
+        <div id="navi" className={`topnav ${borderBottom ? 'bord-thin-bottom' : ''}`}>
             <div className="container">
                 <div className={`logo icon-img-${borderBottom ? '100' : '170'}`}>
                     <Link href={`/${lang}`}>
