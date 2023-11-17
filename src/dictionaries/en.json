@@ -56,7 +56,7 @@
       {
         "name": "Maintenance",
         "url": "maintenance"
-      } ,
+      },
       {
         "name": "Maintenance",
         "url": "contact"
@@ -65,12 +65,340 @@
   },
   "page": {
     "home": {
-      "title": "Welcome to NextJs i18n",
-      "description": "Internationalization in NextJs 13 App router"
+      "title": "Turn your digital vision into reality",
+      "description": "From Concept to Creation: Custom Web Solutions for Your Business",
+      "button": "Get Free Consultation"
     },
     "about": {
       "title": "About Us",
-      "description": "This is the about page"
+      "subtitle": "Who We Are?",
+      "intro": "Welcome to Kaapo Studio, where every pixel and line of code tells a story. Starting our journey in 2019, we set out with a dream of bringing a fresh and creative approach to the world of web design and software development.",
+      "vision": "Our vision is simple but ambitious: to transform digital ideas into memorable and functional experiences. Our values - innovation, creativity and attention to detail - are the pillars that guide every project.",
+      "experience": "Even though we are just starting out, our team is made up of young but passionate and dedicated professionals, each with unique expertise in their field.",
+      "commitment": "We are always on the lookout for the latest technologies and trends to ensure that our solutions are not only current, but also one step ahead of the competition.",
+      "cta": {
+        "description": "If you're ready to bring your digital vision to life, we're here to help. Contact us to discuss your project!",
+        "button": "Contact Us"
+      }
+    },
+    "services": {
+      "title": "Services",
+      "description": "From Concept to Creation: Custom Web Solutions for Your Business",
+      "button": "Get Free Consultation",
+      "list": [
+        {
+          "id": 1,
+          "icon": "/assets/imgs/serv-icons/0.png",
+          "title": "Web Design",
+          "subTitle": "Design-uri captivante care vorbesc audientei dumneavoastra",
+          "description": "Cream site-uri web estetice, intuitive si responsive. Design-ul nostru se concentreaza pe crearea unei experiente utilizator memorabile.",
+          "benefits": [
+            "Design-uri personalizate",
+            "Compatibilitate mobila",
+            "UI/UX optimizat"
+          ],
+          "link": "/services/web-design"
+        },
+        {
+          "id": 2,
+          "icon": "/assets/imgs/serv-icons/1.png",
+          "title": "Dezvoltare Software",
+          "subTitle": "Solutii software agile pentru afacerea moderna",
+          "description": "Dezvoltam aplicatii software personalizate, de la site-uri web la aplicatii mobile, care se integreaza perfect cu operatiunile dumneavoastra.",
+          "benefits": [
+            "Dezvoltare agila",
+            "Soluții scalabile",
+            "Integrari eficiente"
+          ],
+          "link": "/services/web-development"
+        },
+        {
+          "id": 3,
+          "icon": "/assets/imgs/serv-icons/2.png",
+          "title": "Optimizare SEO",
+          "subTitle": "Strategii SEO pentru a va plasa in topul rezultatelor",
+          "description": "Oferim servicii de optimizare SEO care imbunatațesc vizibilitatea online si atrag trafic de calitate spre site-ul tau.",
+          "benefits": [
+            "Analiza SEO detaliata",
+            "Cresterea traficului organic",
+            "Imbunatatirea clasamentului"
+          ],
+          "link": "/services/seo"
+        },
+        {
+          "id": 4,
+          "icon": "/assets/imgs/serv-icons/0.png",
+          "title": "Mentenanta",
+          "subTitle": "Mentenanta si suport continuu pentru site-ul dumneavoastra",
+          "description": "Oferim servicii de mentenanța web complete pentru a asigura ca site-ul dumneavoastra ramane actualizat, sigur si functional. De la actualizari periodice, backup-uri si securitate, pana la optimizari si suport tehnic, ne asiguram ca platforma dumneavoastra online funcționeaza fara probleme.",
+          "benefits": [
+            "Actualizari si backup-uri regulate",
+            "monitorizare securitate",
+            "suport tehnic rapid"
+          ],
+          "link": "/services/maintenance"
+        }
+      ]
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Selected projects",
+      "button": "Get Free Consultation",
+      "list": [
+        {
+          "id": 1,
+          "logo": {
+            "src": "/assets/imgs/works/projects/orange/orange-logo.svg",
+            "alt": "Orange Romania"
+          },
+          "img": "/assets/imgs/works/projects/orange/macbook-orange.jpg",
+          "category": "Frontend Development",
+          "industry": "Telecommunications",
+          "year": "2023",
+          "link": "/projects/orange",
+          "title": "Orange Romania",
+          "description": "Din 2004 si pana in prezent, Orange este liderul industriei de telecomunicatii din Romania, un operator care ofera servicii integrate, cu peste 10 milioane de bani si o cifra de afaceri de 1,23 miliarde de euro in 2021.",
+          "technologies": [
+            "Html",
+            "Scss",
+            "Boostrap",
+            "Angular",
+            "Material design",
+            "NgRx",
+            "Typescript",
+            "GraphQL"
+          ]
+        },
+        {
+          "id": 2,
+          "logo": {
+            "src": "/assets/imgs/works/projects/rurudent/rurudent-logo.svg",
+            "alt": "Ruru Dent Clinic"
+          },
+          "img": "/assets/imgs/works/projects/rurudent/macbook-rurudent.jpg",
+          "category": "Web Design",
+          "industry": "Dental",
+          "year": "2022",
+          "link": "/projects/rurudent",
+          "title": "Ruru Dent",
+          "description": "The client has a modern dental clinic where he offers quality services to his patients. Have a team of doctors with experience in the field of dentistry.",
+          "technologies": [
+            "Html",
+            "Scss",
+            "React Boostrap",
+            "NextJs",
+            "Figma",
+            "Adobe Photoshop",
+            "Adobe Illustrator"
+          ]
+        },
+        {
+          "id": 3,
+          "logo": {
+            "src": "/assets/imgs/works/projects/lumiere/lumiere-logo.svg",
+            "alt": "Lumiere Dental Clinic"
+          },
+          "img": "/assets/imgs/works/projects/lumiere/macbook-lumieredentalclinic.jpg",
+          "category": "Web Design",
+          "industry": "Dental",
+          "year": "2021",
+          "link": "/projects/lumiere",
+          "title": "Lumiere Dental Clinic",
+          "description": "Lumiere Dental Clinic, through high quality standards, a team of international doctors, the best quality treatments, the latest generation equipment and technologies, will offer patients premium dental services in the heart of Bucharest.",
+          "technologies": [
+            "Html",
+            "Scss",
+            "React Boostrap",
+            "NextJs",
+            "Figma",
+            "Adobe Photoshop",
+            "Adobe Illustrator"
+          ]
+        },
+        {
+          "id": 4,
+          "logo": {
+            "src": "/assets/imgs/works/projects/vwatch/vwatch-logo.svg",
+            "alt": "vWatch"
+          },
+          "img": "/assets/imgs/works/projects/vwatch/macbook-vwatch.jpg",
+          "category": "Web Design",
+          "industry": "Watches",
+          "year": "2020",
+          "link": "/projects/v-watch",
+          "title": "vWatch Romania",
+          "description": "vWatch is a Romanian company that sells watches and accessories. They are not an official dealer for the products they sell and have no affiliation with the manufacturers.",
+          "technologies": [
+            "Html",
+            "Scss",
+            "React Boostrap",
+            "NextJs",
+            "Figma",
+            "Adobe Photoshop",
+            "Adobe Illustrator"
+          ]
+        },
+        {
+          "id": 5,
+          "logo": {
+            "src": "/assets/imgs/works/projects/fitness-geek/fitness-geek-logo.svg",
+            "alt": "Fitness Geek"
+          },
+          "img": "/assets/imgs/works/projects/fitness-geek/macbook-fitness-geek.jpg",
+          "category": "Web Design",
+          "industry": "Dental",
+          "year": "2020",
+          "link": "/projects/fitness-geek",
+          "title": "Fitness Geek",
+          "description": "The client has a modern dental clinic where he offers quality services to his patients. Have a team of doctors with experience in the field of dentistry.",
+          "technologies": [
+            "Html",
+            "Scss",
+            "React Boostrap",
+            "NextJs",
+            "Figma",
+            "Adobe Photoshop",
+            "Adobe Illustrator"
+          ]
+        },
+        {
+          "id": 6,
+          "logo": {
+            "src": "/assets/imgs/works/projects/black-on-white/rurudent-logo.svg",
+            "alt": "Black On White"
+          },
+          "img": "/assets/imgs/works/projects/black-on-white/macbook-black-on-white.jpg",
+          "category": "Web Design",
+          "industry": "Hair Salon",
+          "year": "2019",
+          "link": "/projects/black-on-white",
+          "title": "Black on White",
+          "description": "The name of the client is Emilian Alexandru and he is a hairstylist with 15 years of experience, made both in the country and abroad.",
+          "technologies": [
+            "Html",
+            "Scss",
+            "React Boostrap",
+            "NextJs",
+            "Figma",
+            "Adobe Photoshop",
+            "Adobe Illustrator"
+          ]
+        },
+        {
+          "id": 7,
+          "logo": {
+            "src": "/assets/imgs/works/projects/pro-events/pro-events-logo.svg",
+            "alt": "Pro Events"
+          },
+          "img": "/assets/imgs/works/projects/pro-events/macbook-pro-events.jpg",
+          "category": "Web Design",
+          "industry": "Wedding",
+          "year": "2019",
+          "link": "/projects/rurudent",
+          "title": "Pro Events",
+          "description": "The client has a modern dental clinic where he offers quality services to his patients. Have a team of doctors with experience in the field of dentistry.",
+          "technologies": [
+            "Html",
+            "Scss",
+            "React Boostrap",
+            "NextJs",
+            "Figma",
+            "Adobe Photoshop",
+            "Adobe Illustrator"
+          ]
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "description": "What clients sayed about us",
+      "button": "Get Free Consultation",
+      "list": [
+        {
+          "client": {
+            "name": "Alexandra Nae",
+            "company": "MoftVilla",
+            "title": "CEO"
+          },
+          "blockquote": "We collaborated for the creation of a website for MOFT, our villa, with Kaapo Studio and we were extremely pleased with how the collaboration went. Everything was very fast and well put together. Our ideas have been translated into the website as we wanted and I appreciate the help we still get every time we encounter a problem."
+        },
+        {
+          "client": {
+            "name": "Dr. Ibrahim Kassab",
+            "company": "Lumiere Dental",
+            "title": "CEO"
+          },
+          "blockquote": "Everything was perfect and good experience."
+        },
+        {
+          "client": {
+            "name": "Emilian Alexandru",
+            "company": "BlackOnWhite",
+            "title": "CEO"
+          },
+          "blockquote": "I mean, I'm very happy with the way I interacted with Kaapo Studio. They are a studio with a thought outside the box, he delivered on time all the services I needed and of course the services were just as expected. I recommend with confidence!"
+        },
+        {
+          "client": {
+            "name": "Alexander Florescu",
+            "company": "FuturaGym",
+            "title": "CEO"
+          },
+          "blockquote": "Together with Kaapo Studio I managed to create a project I've dreamed about for a long time, namely the online fitness and nutrition platform www.alexanderflorescu.ro. A professional and creative studio, which always comes to complete the project with new solutions and ideas for improving the technical or aesthetic aspects. The level of promptness regarding the maintenance part is above expectations! I highly recommend!"
+        },
+        {
+          "client": {
+            "name": "Madalin Ciobotaru",
+            "company": "FitnessGeek",
+            "title": "Personal Trainer"
+          },
+          "blockquote": "For everyone who desires to start an website and add value to his services, I highly recommend you to choose Kaapo Studio’s services. This studio innovative approach on mixing multiple elements and creating the perfect harmony from header to footer impressed me and made me proud of my website. They add passion in every project and they are very thorough about every single detail. Whatever you order, they deliver on time!"
+        }
+      ]
+    },
+    "brands": [
+      {
+        "name": "Orange",
+        "company": "Orange",
+        "website": "https://www.orange.ro/magazin-online",
+        "icon": "/assets/svg/logos/orange-logo.svg"
+      },
+      {
+        "name": "Dr. Ibrahim Kassab",
+        "company": "Lumiere Dental Clinic",
+        "website": "https://www.lumieredentalclinic.ro/",
+        "icon": "/assets/svg/logos/lumiere-dental.svg"
+      },
+      {
+        "name": "Alexander Florescu",
+        "company": "Alexander Florescu",
+        "website": "https://www.alexanderflorescu.ro/",
+        "icon": "/assets/svg/logos/alexander-florescu-logo.svg"
+      },
+      {
+        "name": "Emilian Alexandru",
+        "company": "BlackOnWhite",
+        "website": "https://www.blackonwhite.ro/",
+        "icon": "/assets/svg/logos/blackonwhite-barber-shop-logo.svg"
+      },
+      {
+        "name": "Alexandra Nae",
+        "company": "Moft Villa",
+        "website": "https://www.moftvilla.ro/",
+        "icon": "/assets/svg/logos/moft-logo.svg"
+      },
+      {
+        "name": "Dr. Rucsandra Vladescu",
+        "company": "RuruDent",
+        "website": "https://www.rurudent.ro/",
+        "icon": "/assets/svg/logos/rurudent-logo.svg"
+      }
+    ],
+    "contact": {
+      "title": "Contact",
+      "subTitle": "Work With Us",
+      "description": "We would love to hear more about your project",
+      "button": "Get in touch"
     }
   }
 }
