@@ -101,18 +101,18 @@ function Menu({ lang, navigation }) {
                                     </div>
                                 </li>
 
-                                <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                                    <div className="o-hidden">
-                                        <Link
-                                            href={`/${lang}/portfolio`}
-                                            className="link animsition-link"
-                                            onClick={closeMenu}
-                                        >
-                                            <span className="nm">04.</span>
-                                            {navigation.mainMenu.portfolio}
-                                        </Link>
-                                    </div>
-                                </li>
+                                {/*<li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>*/}
+                                {/*    <div className="o-hidden">*/}
+                                {/*        <Link*/}
+                                {/*            href={`/${lang}/portfolio`}*/}
+                                {/*            className="link animsition-link"*/}
+                                {/*            onClick={closeMenu}*/}
+                                {/*        >*/}
+                                {/*            <span className="nm">04.</span>*/}
+                                {/*            {navigation.mainMenu.portfolio}*/}
+                                {/*        </Link>*/}
+                                {/*    </div>*/}
+                                {/*</li>*/}
 
                                 <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                                     <div className="o-hidden">
@@ -121,7 +121,7 @@ function Menu({ lang, navigation }) {
                                             className="link animsition-link"
                                             onClick={closeMenu}
                                         >
-                                            <span className="nm">05.</span>
+                                            <span className="nm">04.</span>
                                             {navigation.mainMenu.contact}
                                         </Link>
                                     </div>
@@ -156,17 +156,29 @@ function Menu({ lang, navigation }) {
                                 <h6 className="text-u fw-600 mb-20">{navigation.contactInfo.follow.name}</h6>
                                 <ul className="rest social-text d-flex fz-13">
                                     <li className="mr-20">
-                                        <a href="https://www.linkedin.com/company/kaapo-studio/" className="hover-this">
+                                        <a
+                                            href="https://www.linkedin.com/company/kaapo-studio/"
+                                            target="_blank"
+                                            className="hover-this"
+                                        >
                                             <span className="hover-anim">LinkedIn</span>
                                         </a>
                                     </li>
                                     <li className="mr-20">
-                                        <a href="https://www.facebook.com/kaapo.studio/" className="hover-this">
+                                        <a
+                                            href="https://www.facebook.com/kaapo.studio/"
+                                            target="_blank"
+                                            className="hover-this"
+                                        >
                                             <span className="hover-anim">Facebook</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/kaapo.studio/" className="hover-this">
+                                        <a
+                                            href="https://www.instagram.com/kaapo.studio/"
+                                            target="_blank"
+                                            className="hover-this"
+                                        >
                                             <span className="hover-anim">Instagram</span>
                                         </a>
                                     </li>
@@ -181,9 +193,13 @@ function Menu({ lang, navigation }) {
                                     {i18n.locales.map((locale) => {
                                         return (
                                             <li key={locale} className="mr-20">
-                                                <Link href={redirectedPathName(locale)} className="hover-this">
+                                                <a
+                                                    href={`https://kaapo.studio/${locale}`}
+                                                    className="hover-this"
+                                                    target="_self"
+                                                >
                                                     <span className="hover-anim">{locale}</span>
-                                                </Link>
+                                                </a>
                                             </li>
                                         );
                                     })}

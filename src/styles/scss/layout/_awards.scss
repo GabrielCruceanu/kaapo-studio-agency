@@ -6,7 +6,7 @@
 
     .item-title{
         padding: 0 15px 25px;
-        border-bottom: 1px solid rgba(255,255,255,.5);
+        border-bottom: 1px solid rgba(0,0,0,.5);
 
         > div{
             padding: 0;
@@ -15,7 +15,7 @@
 
     .item-line{
         padding: 25px 15px;
-        border-bottom: 1px solid rgba(255,255,255,.2);
+        border-bottom: 1px solid rgba(0,0,0,.2);
         position: relative;
         transition: all .4s;
         z-index: 3;
