@@ -114,18 +114,18 @@ function Menu({ lang, navigation }) {
                                 {/*    </div>*/}
                                 {/*</li>*/}
 
-                                <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                                    <div className="o-hidden">
-                                        <Link
-                                            href={`/${lang}/contact`}
-                                            className="link animsition-link"
-                                            onClick={closeMenu}
-                                        >
-                                            <span className="nm">04.</span>
-                                            {navigation.mainMenu.contact}
-                                        </Link>
-                                    </div>
-                                </li>
+                                {/*<li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>*/}
+                                {/*    <div className="o-hidden">*/}
+                                {/*        <Link*/}
+                                {/*            href={`/${lang}/contact`}*/}
+                                {/*            className="link animsition-link"*/}
+                                {/*            onClick={closeMenu}*/}
+                                {/*        >*/}
+                                {/*            <span className="nm">04.</span>*/}
+                                {/*            {navigation.mainMenu.contact}*/}
+                                {/*        </Link>*/}
+                                {/*    </div>*/}
+                                {/*</li>*/}
                             </ul>
                         </div>
                     </div>
