@@ -16,19 +16,22 @@ import Services from '@/src/components/Kaapo/landing/Services';
 import Testimonials from '@/src/components/Kaapo/landing/Testimonials';
 import Portfolio from '@/src/components/Kaapo/landing/Portfolio';
 import Contact from '@/src/components/Kaapo/landing/Contact';
+import Script from 'next/script';
+import { Nunito_Sans } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 
-export const metadata = {
-    title: 'Kaapo Studio',
-};
-
+const nunitoSans = Nunito_Sans({
+    variable: '--nunito',
+    weight: ['200', '300', '400', '500', '700', '800', '900'],
+    subsets: ['latin'],
+});
 export default async function IndexPage({ params: { lang } }: { params: { lang: Locale } }) {
     const { navigation, footer, page } = await getDictionary(lang);
     return (
-        <>
+        <body className={nunitoSans.variable + ' main-bg'}>
             <LoadingScreen />
             <Cursor />
             <ProgressScroll />
-
             <div id="smooth-wrapper">
                 <Navbar borderBottom={false} lang={lang} />
                 <Menu lang={lang} navigation={navigation} />
@@ -46,6 +49,16 @@ export default async function IndexPage({ params: { lang } }: { params: { lang: 
                     <Footer subBg={true} footer={footer} />
                 </div>
             </div>
-        </>
+            <Script src="/assets/js/bootstrap.bundle.min.js" strategy="beforeInteractive" />
+            <Script src="/assets/js/plugins.js" strategy="beforeInteractive" />
+            <Script src="/assets/js/isotope.pkgd.min.js" strategy="beforeInteractive" />
+            <Script src="/assets/js/wow.min.js" strategy="beforeInteractive" />
+            <Script src="/assets/js/gsap.min.js" strategy="beforeInteractive" />
+            <Script src="/assets/js/ScrollSmoother.min.js" strategy="beforeInteractive" />
+            <Script src="/assets/js/ScrollTrigger.min.js" strategy="beforeInteractive" />
+            <Script src="/assets/js/smoother-script.js" strategy="lazyOnload" />
+            <Script src="/assets/js/scripts.js" strategy="lazyOnload" />
+            <Analytics />
+        </body>
     );
 }
