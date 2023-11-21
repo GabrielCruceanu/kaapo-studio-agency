@@ -14,7 +14,7 @@ function Header({ lang, home }) {
                             <p>{home.description}</p>
                             <div className="d-flex align-items-center justify-content-center ">
                                 <Link
-                                    href={`/${lang}/contact`}
+                                    href="mailto:contact@kaapo.studio"
                                     className="btn btn-dark mt-20 d-flex align-items-center animsition-link"
                                 >
                                     <span>{home.button}</span>

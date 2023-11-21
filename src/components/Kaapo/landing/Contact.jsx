@@ -36,7 +36,10 @@ function Contact({ contact, lang }) {
                                     <span className="sub-title bord">{contact.subTitle}</span>
                                 </div>
                                 <h2 className="fz-70 f-bold text-u">{contact.description}</h2>
-                                <Link href={`/${lang}/contact`} className="butn-circle animsition-link colorbg mt-30">
+                                <Link
+                                    href="mailto:contact@kaapo.studio"
+                                    className="butn-circle animsition-link colorbg mt-30"
+                                >
                                     <span>{contact.button}</span>
                                 </Link>
                             </div>
