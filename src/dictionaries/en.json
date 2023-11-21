@@ -15,8 +15,8 @@
             "url": "web-development"
           },
           {
-            "name": "Optimization",
-            "url": "optimization"
+            "name": "Optimization SEO",
+            "url": "seo-optimization"
           },
           {
             "name": "Maintenance",
@@ -97,7 +97,8 @@
             "Compatibilitate mobila",
             "UI/UX optimizat"
           ],
-          "link": "/services/web-design"
+          "link": "/services/web-design",
+          "slug": "web-design"
         },
         {
           "id": 2,
@@ -110,7 +111,8 @@
             "Soluții scalabile",
             "Integrari eficiente"
           ],
-          "link": "/services/web-development"
+          "link": "/services/web-development",
+          "slug": "web-development"
         },
         {
           "id": 3,
@@ -123,7 +125,8 @@
             "Cresterea traficului organic",
             "Imbunatatirea clasamentului"
           ],
-          "link": "/services/seo"
+          "link": "/services/seo",
+          "slug": "seo-optimization"
         },
         {
           "id": 4,
@@ -136,7 +139,8 @@
             "monitorizare securitate",
             "suport tehnic rapid"
           ],
-          "link": "/services/maintenance"
+          "link": "/services/maintenance",
+          "slug": "maintenance"
         }
       ]
     },
